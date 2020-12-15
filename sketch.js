@@ -295,7 +295,7 @@ function generate() {
     }
   }
 
-  document.getElementById("out").innerHTML = ret.map(x => `${x.type} - ${x.amt}`).join("<br />");
+  document.getElementById("out").innerHTML = `Time to queue: ${(out.length*2) + (checked("nextRound") ? 2 : 0)}s<br /><br />` + ret.map(x => `${x.type} - ${x.amt}`).join("<br />");
 }
 
 function val(id) {
