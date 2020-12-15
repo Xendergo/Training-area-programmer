@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Training area programmer</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background-color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+    }
+
+    input {
+      margin: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex;">
+    <div>
+      Skellies - <input id="skellies" type="number" value=0><br>
+      Zombies - <input id="zombies" type="number" value=0><br>
+      Witches - <input id="witches" type="number" value=0><br>
+      <br>
+      Swiftness - <input id="swiftness" type="checkbox"><br>
+      Strength - <input id="strength" type="checkbox"><br>
+      Invis - <input id="invis" type="checkbox"><br>
+      Poison - <input id="poison" type="checkbox"><br>
+      Regen - <input id="regen" type="checkbox"><br>
+      Rando pot - <input id="rando" type="checkbox"><br>
+      <br>
+      Leather armor - <input id="leatherArmor" type="number" value=0><br>
+      Iron armor - <input id="ironArmor" type="number" value=0><br>
+      Diamond armor - <input id="diamondArmor" type="number" value=0><br>
+      <br>
+      Wooden sword - <input id="woodenSword" type="number" value=0><br>
+      Stone sword - <input id="stoneSword" type="number" value=0><br>
+      Iron sword - <input id="ironSword" type="number" value=0><br>
+      Diamond sword - <input id="diamondSword" type="number" value=0><br>
+      <br>
+      Bow - <input id="bow" type="number" value=0><br>
+      Totem - <input id="totem" type="number" value=0><br>
+      Gapple - <input id="gapple" type="number" value=0><br>
+      <br>
+      Swiftness beacon - <input id="swiftnessBeacon" type="checkbox"><br>
+      Resistance beacon - <input id="resistanceBeacon" type="checkbox"><br>
+      Strength beacon - <input id="strengthBeacon" type="checkbox"><br>
+      Regen+haste beacon - <input id="regenBeacon" type="checkbox"><br>
+      <br>
+      Music - <input id="music" type="checkbox"><br>
+      <br>
+      Next round - <input id="nextRound" type="checkbox" checked><br>
+      <br>
+      <button id="generate" onclick="generate()">Generate</button>
+    </div>
+
+    <p id="out" style="margin-left: 16px;"></p>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+
+</html>
